@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #0D0502;
+  color: #F5F5F5;
+  font-family: Inter, sans-serif;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container-custom {
+  max-width: 1280px;
+  margin: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.section-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.glass-card {
+  background: rgba(20, 8, 4, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid #2B1B12;
+}
+
+.gradient-text {
+  background: linear-gradient(
+    90deg,
+    #FF7A00,
+    #FFA94D
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.project-glow {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: rgba(255, 122, 0, 0.1);
+  filter: blur(150px);
+  border-radius: 50%;
+}
+
+.timeline-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ff7a00;
+  box-shadow: 0 0 20px rgba(255, 122, 0, 0.8);
+}
+
+.process-card {
+  transition: all 0.3s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-6px);
+}
