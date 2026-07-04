@@ -1,9 +1,13 @@
+import Navbar from "../components/layout/Navbar";
+import Footer from "../components/layout/Footer";
+import Contact from "../components/contact/Contact";
+
 export default function ContactPage() {
   return (
-    <div className="min-h-screen p-10">
-      <h1 className="text-5xl font-bold">
-        Contact
-      </h1>
-    </div>
+    <>
+      <Navbar />
+      <Contact />
+      <Footer />
+    </>
   );
 }
